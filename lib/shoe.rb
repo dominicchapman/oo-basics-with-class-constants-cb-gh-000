@@ -17,4 +17,5 @@ class Shoe
     @brand = brand
     brand_exists = BRANDS.any? { |existing_brand| existing brand == brand }
     !brand_exists ? BRANDS << brand : nil
+  end
 end
