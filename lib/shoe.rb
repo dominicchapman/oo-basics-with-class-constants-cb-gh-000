@@ -10,7 +10,6 @@ class Shoe
       BRANDS.any? { |existing_brand| existing_brand == brand }
     end
     brand_exists ? (BRANDS << brand) : return
-    
   end
 
   def cobble
