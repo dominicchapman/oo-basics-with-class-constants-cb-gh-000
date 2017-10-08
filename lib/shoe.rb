@@ -6,10 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    def brand_exists?(brand)
-      BRANDS.any? { |existing_brand| existing_brand == brand }
-    end
-    brand_exists ? (BRANDS << brand) : return
+    BRANDS << brand unless BRANDS.include?(brand)
   end
 
   def cobble
