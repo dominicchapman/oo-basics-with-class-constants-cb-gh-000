@@ -15,7 +15,7 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    brand_exists = BRANDS.any? { |existing_brand| existing brand == brand }
+    brand_exists = BRANDS.any? { |existing_brand| existing_brand == brand }
     !brand_exists ? BRANDS << brand : nil
   end
 end
